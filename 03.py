@@ -32,5 +32,6 @@ def main():
 
     print(f"сума значеннь у дереві: {f_sum(b)}")
 
+
 if __name__ == "__main__":
     main()

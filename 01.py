@@ -35,5 +35,6 @@ def main():
 
     print(f"Максимальне значення у дереві: {f_max(b)}")
 
+
 if __name__ == "__main__":
     main()

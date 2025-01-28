@@ -35,5 +35,6 @@ def main():
 
     print(f"Мінімальне значення у дереві: {f_min(b)}")
 
+
 if __name__ == "__main__":
     main()
