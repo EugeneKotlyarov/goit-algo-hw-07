@@ -1,3 +1,4 @@
+### Базові речі для всіх поточних завдань, дерево та вставка
 class TreeNode:
     def __init__(self, key):
         self.left = None
@@ -16,12 +17,14 @@ def insert(root, key):
     return root
 
 
+### Завдання 3: сума всіх елементів
 def f_sum(root):
     if not root:
         return 0
     return root.val + f_sum(root.left) + f_sum(root.right)
 
 
+### тестування
 def main():
     b = TreeNode(15)
     b = insert(b, 20)

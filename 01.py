@@ -1,3 +1,4 @@
+### Базові речі для всіх поточних завдань, дерево та вставка
 class TreeNode:
     def __init__(self, key):
         self.left = None
@@ -16,6 +17,7 @@ def insert(root, key):
     return root
 
 
+### Завдання 1: пошук максимального елемента
 def f_max(root):
     if root is None:
         return None
@@ -25,6 +27,7 @@ def f_max(root):
     return current.val
 
 
+### тестування
 def main():
     b = TreeNode(15)
     b = insert(b, 20)
