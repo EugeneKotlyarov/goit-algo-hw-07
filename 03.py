@@ -16,13 +16,10 @@ def insert(root, key):
     return root
 
 
-def f_min(root):
-    if root is None:
-        return None
-    current = root
-    while current.left:
-        current = current.left
-    return current.val
+def f_sum(root):
+    if not root:
+        return 0
+    return root.val + f_sum(root.left) + f_sum(root.right)
 
 
 def main():
@@ -33,7 +30,7 @@ def main():
     b = insert(b, 25)
     b = insert(b, 35)
 
-    print(f"Мінімальне значення у дереві: {f_min(b)}")
+    print(f"сума значеннь у дереві: {f_sum(b)}")
 
 if __name__ == "__main__":
     main()

@@ -33,7 +33,7 @@ def main():
     b = insert(b, 25)
     b = insert(b, 35)
 
-    print("Максимальне значення у дереві:", f_max(b))
+    print(f"Максимальне значення у дереві: {f_max(b)}")
 
 if __name__ == "__main__":
     main()
